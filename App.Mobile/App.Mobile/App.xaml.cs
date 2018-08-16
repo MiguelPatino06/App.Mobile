@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
+﻿using App.Mobile.Pages;
 using Xamarin.Forms;
 
-namespace App.Mobile
+namespace App.Mobile.Droid
 {
 	public partial class App : Application
 	{
@@ -13,8 +9,8 @@ namespace App.Mobile
 		{
 			InitializeComponent();
 
-			MainPage = new App.Mobile.MainPage();
-		}
+            MainPage = new NavigationPage(new Menu("USER01"));
+        }
 
 		protected override void OnStart ()
 		{
