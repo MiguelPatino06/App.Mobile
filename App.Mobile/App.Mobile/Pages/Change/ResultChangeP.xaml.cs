@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using App.Mobile.Droid.Services;
+using App.Mobile.Droid.Pages.Change;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
 namespace App.Mobile.Droid.Pages.Change
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-
-    public partial class ClientProduct : ContentPage
-    {
-        public ClientProduct()
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class ResultChangeP : ContentPage
+	{
+        public ResultChangeP()
         {
             InitializeComponent();
-            BindingContext = new SearchOrderReqViewModel();
+            //BindingContext = new ContentPageViewModel();
         }
 
 
@@ -25,12 +24,9 @@ namespace App.Mobile.Droid.Pages.Change
             Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenuChangeP());
         }
 
-
-        private void OnTapGestureRecognizerTappedSearch(object sender, EventArgs e)
+        private void BtnGuardar_OnClicked(object sender, EventArgs e)
         {
             Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenuChangeP());
         }
-
-
     }
 }

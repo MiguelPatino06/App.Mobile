@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App.Mobile.Pages.Login" BackgroundColor="{StaticResource BackgroundPhone}" 
+             x:Class="App.Mobile.Droid.Pages.Login" 
+             BackgroundColor="{StaticResource BackgroundPhone}" 
              NavigationPage.HasNavigationBar="False">
 
     <Grid HorizontalOptions="Center" VerticalOptions="Center">

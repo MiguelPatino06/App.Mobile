@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Windows.Input;
 using Android.Support.V4.View;
+using App.Mobile.Droid.Pages;
 using GalaSoft.MvvmLight.Command;
 using App.Mobile.Droid.Pages.Change;
 using App.Mobile.Droid.Pages.Count;
@@ -28,6 +29,9 @@ namespace App.Mobile.Droid.Models
 
             switch (Id)
             {
+                case 0:
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new MainMenu("UserLogin"));
+                    break;
                 case 1:
                     Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Search());
                     break;
@@ -41,10 +45,10 @@ namespace App.Mobile.Droid.Models
                     Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.WarehouseTransfer.SubMenu());
                     break;
                 case 5: //Salida a Producción
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenu());
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenuOutput());
                     break;
                 case 6: // Cambio Producto
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.SubMenu());
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.SubMenuChangeP());
                     break;
                 //case 7: // "Muestra":
                 //    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Transaction.Sample.SubMenu());
@@ -59,7 +63,7 @@ namespace App.Mobile.Droid.Models
                     Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.ClientProduct());
                     break;
                 case 11: // Cambio Producto - Lista
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.List());
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.ListChangeP());
                     break;
                 case 12: // Transferencia entre Bodegas - Crear Solicitud
                     Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.WarehouseTransfer.Warehouses());
@@ -71,7 +75,7 @@ namespace App.Mobile.Droid.Models
                     Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.OutputProducts());
                     break;
                 case 15: // Salida a Producción - Lista
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.List());
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.ListOutput());
                     break;
                 //case 16: // Exit App                  
                 //    //Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Transaction.Output.List());

@@ -7,7 +7,7 @@ using System.Windows.Input;
 using App.Mobile.Droid.Models;
 using App.Mobile.Droid.Services;
 using GalaSoft.MvvmLight.Command;
-using Detail = App.Mobile.Droid.Pages.Change.Detail;
+using Detail = App.Mobile.Droid.Pages.Change.DetailChangeP;
 using Xamarin.Forms;
 
 namespace App.Mobile.Droid.ViewModels

@@ -5,7 +5,7 @@ using System.Text;
 using System.Windows.Input;
 using GalaSoft.MvvmLight.Command;
 using App.Mobile.Droid.Models;
-using Detail = App.Mobile.Droid.Pages.Change.Detail;
+using Detail = App.Mobile.Droid.Pages.Change.DetailChangeP;
 
 namespace App.Mobile.Droid.Services
 {

@@ -9,18 +9,17 @@ using Xamarin.Forms.Xaml;
 
 namespace App.Mobile.Droid.Pages.Output
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class List : ContentPage
-    {
-        public List()
-        {
-            InitializeComponent();
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class ListOutput : ContentPage
+	{
+		public ListOutput ()
+		{
+			InitializeComponent ();
             BindingContext = new SearchOutputViewModel();
         }
-
         private void OnTapGestureRecognizerTapped(object sender, EventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenu());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenuOutput());
         }
     }
 }

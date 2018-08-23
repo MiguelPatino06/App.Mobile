@@ -167,7 +167,7 @@ namespace App.Mobile.Droid.ViewModels
                 result = await services.UpdateOrder(items);
                 if (result)
                 {
-                    await Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Result());
+                    await Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new ResultChangeP());
                 }
                 else
                     App.Current.MainPage.DisplayAlert("TSHIRT", "Error guardando registro", "OK");

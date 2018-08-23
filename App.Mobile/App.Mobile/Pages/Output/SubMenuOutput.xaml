@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App.Mobile.Droid.Pages.Change.SubMenu"  
+             x:Class="App.Mobile.Droid.Pages.Output.SubMenuOutput" 
              BackgroundColor="{StaticResource BackgroundPhone}"
              NavigationPage.HasNavigationBar="False">
-
-    <StackLayout>
+    <StackLayout >
         <Grid  BackgroundColor="{StaticResource TextColor}" Margin="0,0.333,0,594.667">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="45" />
@@ -16,8 +15,8 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Image WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/Menu.png" ></Image>
-            <Label Text="     T-SHIRT Cambio de Producto" Grid.Row="0" FontSize="14"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+            <Image WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/exitItem.png" ></Image>
+            <Label Text="     Salida a Producción" Grid.Row="0" FontSize="14"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
 
 
 

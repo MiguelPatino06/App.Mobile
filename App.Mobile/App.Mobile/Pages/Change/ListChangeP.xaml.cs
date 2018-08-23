@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace App.Mobile.Droid.Pages.Change
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class List : ContentPage
-    {
-        public List()
+	public partial class ListChangeP : ContentPage
+	{
+        public ListChangeP()
         {
             InitializeComponent();
 
@@ -26,8 +26,7 @@ namespace App.Mobile.Droid.Pages.Change
 
         private void OnTapGestureRecognizerTapped(object sender, EventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.SubMenu());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.SubMenuChangeP());
         }
-
     }
 }

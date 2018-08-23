@@ -132,7 +132,6 @@ namespace App.Mobile.Droid.Services
                 {
                     var x = await request.Content.ReadAsStringAsync();
                     result = JsonConvert.DeserializeObject<bool>(x);
-
                 }
             }
             catch (Exception ex)

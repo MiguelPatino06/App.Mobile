@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-            xmlns:b="clr-namespace:Xamarin.Behaviors;assembly=Xamarin.Behaviors"
+             xmlns:behaviors="clr-namespace:Xamarin.Behaviors;assembly=Xamarin.Behaviors"
              x:Class="App.Mobile.Droid.Pages.WarehouseTransfer.List"
               NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource BackgroundPhone}"
@@ -41,11 +41,11 @@
 
                     <Label Grid.Row="1" Grid.Column="1" Text="Nro Solicitud" HorizontalOptions="Start" VerticalOptions="Center" TextColor="{StaticResource TextColor}" FontSize="14" FontAttributes="Bold"/>
                     <Entry x:Name="EntCode" Grid.Row="1" Grid.Column="2"  HorizontalOptions="StartAndExpand" VerticalOptions="Center" WidthRequest="100" FontSize="14"  Text="{Binding TransferCode}" >
-                        <b:Interaction.Behaviors>
-                            <b:BehaviorCollection>
-                                <b:EventToCommand  EventName="Completed"  Command="{Binding SearchRequestCommand}"/>
-                            </b:BehaviorCollection>
-                        </b:Interaction.Behaviors>
+                        <behaviors:Interaction.Behaviors>
+                            <behaviors:BehaviorCollection>
+                                <behaviors:EventToCommand  EventName="Completed"  Command="{Binding SearchRequestCommand}"/>
+                            </behaviors:BehaviorCollection>
+                        </behaviors:Interaction.Behaviors>
                     </Entry>
                     <Image WidthRequest="25" Grid.Row="1" Grid.Column="3"  HeightRequest="25" VerticalOptions="Center" HorizontalOptions="Start" Source="Images/search.png" >
                         <Image.GestureRecognizers>
@@ -130,7 +130,7 @@
                                                         HorizontalOptions="Center" 
                                                         WidthRequest="70" 
                                                         Style="{StaticResource ButtonTShirt}" 
-                                                        Command="{Binding Path=BindingContext.DetailCommand, Source={x:Reference TransferList}}"
+                                                         Command="{Binding Path=BindingContext.DetailCommand, Source={x:Reference TransferList}}"
                                                         CommandParameter="{Binding .}" />
 
                                         </Grid>

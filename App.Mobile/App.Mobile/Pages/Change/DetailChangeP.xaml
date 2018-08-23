@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App.Mobile.Droid.Pages.Change.Detail"            
+             x:Class="App.Mobile.Droid.Pages.Change.DetailChangeP" 
              NavigationPage.HasNavigationBar="False"
              BackgroundColor="{StaticResource BackgroundPhone}" 
              x:Name="PageDetail">
@@ -68,7 +68,7 @@
                         ItemsSource="{Binding Details}" 
                         SelectedItem="{Binding SelectedItemDetail, Mode=TwoWay}"
                         HasUnevenRows="True"  
-                        HorizontalOptions="Center" 
+                        HorizontalOptions="FillAndExpand" 
                         VerticalOptions="Start" 
                         HeightRequest="{Binding HeightList}">
                         <ListView.ItemTemplate>

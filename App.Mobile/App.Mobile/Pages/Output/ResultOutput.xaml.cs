@@ -10,22 +10,21 @@ using Xamarin.Forms.Xaml;
 namespace App.Mobile.Droid.Pages.Output
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Result : ContentPage
-    {
-        public Result(string id)
+	public partial class ResultOutput : ContentPage
+	{
+		public ResultOutput(string id)
         {
-            InitializeComponent();
+			InitializeComponent ();
             btnGuardar.Text = "Nro SOL" + id;
         }
-
         private void OnTapGestureRecognizerTapped(object sender, EventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenu());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenuOutput());
         }
 
         private void BtnGuardar_OnClicked(object sender, EventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenu());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenuOutput());
         }
     }
 }

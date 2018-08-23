@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:behaviors="clr-namespace:Xamarin.Behaviors;assembly=Xamarin.Behaviors"
-             x:Class="App.Mobile.Droid.Pages.Change.List"             
+             x:Class="App.Mobile.Droid.Pages.Change.ListChange2"             
              BackgroundColor="{StaticResource BackgroundPhone}"
              x:Name="PageOutputList"
              NavigationPage.HasNavigationBar="False">

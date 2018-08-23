@@ -294,7 +294,7 @@ namespace App.Mobile.Droid.ViewModels
 
         public async void Close()
         {
-            await Application.Current.MainPage.Navigation.PushAsync(new Mobile.Pages.Menu(User));
+            await Application.Current.MainPage.Navigation.PushAsync(new Pages.MainMenu(User));
         }
 
         #endregion

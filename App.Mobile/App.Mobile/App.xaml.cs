@@ -1,4 +1,5 @@
-﻿using App.Mobile.Pages;
+﻿
+using App.Mobile.Droid.Pages;
 using Xamarin.Forms;
 
 namespace App.Mobile.Droid
@@ -9,7 +10,8 @@ namespace App.Mobile.Droid
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new Menu("USER01"));
+            MainPage = new NavigationPage(new MainMenu("USER01"));
+            //MainPage = new NavigationPage(new MainMenu());
         }
 
 		protected override void OnStart ()

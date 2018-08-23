@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App.Mobile.Droid.Pages.Output.Result" 
-             BackgroundColor="{StaticResource BackgroundPhone}"  
+             x:Class="App.Mobile.Droid.Pages.Change.ResultChangeP" 
+             BackgroundColor="{StaticResource BackgroundPhone}"
              NavigationPage.HasNavigationBar="False">
     <StackLayout>
         <Grid  BackgroundColor="{StaticResource TextColor}" Margin="0,0.333,0,594.667">
@@ -14,10 +14,11 @@
             <Grid.RowDefinitions>
                 <RowDefinition Height="45"/>
                 <RowDefinition Height="Auto"/>
+                <!--<RowDefinition Height="45"/>-->
             </Grid.RowDefinitions>
 
-            <Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/exitItem.png" Margin="5"></Image>
-            <Label x:Name="EntTitle" Text="     Salida a Producción" Grid.Row="0" FontSize="14"  Grid.Column="1"  HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+            <Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/CambioItem.png" Margin="5"></Image>
+            <Label x:Name="EntProveedor" Text="Cambio de Producto" Grid.Row="0" FontSize="14"  Grid.Column="1"  HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
             <Image WidthRequest="35" Grid.Row="0" Grid.Column="2"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/Menu.png" >
                 <Image.GestureRecognizers>
                     <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
@@ -35,6 +36,10 @@
                     <RowDefinition Height="10"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
+
+
+
+
                 <Image Grid.Row="1" Grid.Column="0" Margin="0,20,0,0" 
                         WidthRequest="80" HeightRequest="80" 
                         VerticalOptions="Center" HorizontalOptions="Center" 
@@ -44,10 +49,14 @@
                         Text="Solicitud creada con Exito" 
                         TextColor="{StaticResource TextColor}" FontAttributes="Bold"
                         VerticalOptions="Center" HorizontalOptions="Center" ></Label>
+
                 <Button x:Name="btnGuardar" Grid.Row="5" Grid.Column="0" 
-                        Style="{StaticResource ButtonTShirt}" WidthRequest="250"
+                        Style="{StaticResource ButtonTShirt}" Text="Nro SOL00001" WidthRequest="250"
                         Clicked="BtnGuardar_OnClicked" HorizontalOptions="CenterAndExpand" ></Button>
+
+
             </Grid>
+
         </Grid>
     </StackLayout>
 </ContentPage>

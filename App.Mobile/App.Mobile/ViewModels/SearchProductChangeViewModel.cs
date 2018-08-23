@@ -96,7 +96,7 @@ namespace App.Mobile.Droid.ViewModels
                 return new Command((e) =>
                 {
                     var item = (e as Models.OrderReqDetailExtend);
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.Detail(item.OrderReqCode.ToString()));
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.DetailChangeP(item.OrderReqCode.ToString()));
                 });
             }
         }

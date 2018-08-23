@@ -60,6 +60,13 @@ namespace App.Mobile.Droid.Pages.WarehouseTransfer
                 Name = "Ver Solicitud",
                 Page = ""
             });
+            Menu.Add(new MenuItemViewModel
+            {
+                Id = 0,
+                Icon = "@drawable/MenuItem.png",
+                Name = "Menu Principal",
+                Page = ""
+            });
 
         }
 

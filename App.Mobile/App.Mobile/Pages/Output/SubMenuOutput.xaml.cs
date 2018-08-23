@@ -12,12 +12,12 @@ using Xamarin.Forms.Xaml;
 namespace App.Mobile.Droid.Pages.Output
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SubMenu : ContentPage
-    {
+	public partial class SubMenuOutput : ContentPage
+	{
         public event PropertyChangedEventHandler PropertyChanged;
 
         public ObservableCollection<MenuItemViewModel> Menu { get; set; }
-        public SubMenu()
+        public SubMenuOutput()
         {
             InitializeComponent();
             BindingContext = new SubMenuViewModelTransaction();
@@ -54,6 +54,13 @@ namespace App.Mobile.Droid.Pages.Output
                 Id = 15,
                 Icon = "@drawable/list.png",
                 Name = "Ver Solicitud",
+                Page = ""
+            });
+            Menu.Add(new MenuItemViewModel
+            {
+                Id = 0,
+                Icon = "@drawable/MenuItem.png",
+                Name = "Menu Principal",
                 Page = ""
             });
 

@@ -21,7 +21,7 @@ namespace App.Mobile.Droid.Pages.Output
 
         private void OnTapGestureRecognizerTapped(object sender, EventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenu());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenuOutput());
         }
 
         public void ButtonBackClick()

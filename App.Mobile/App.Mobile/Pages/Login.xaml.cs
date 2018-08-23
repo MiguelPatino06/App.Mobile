@@ -7,7 +7,7 @@ using App.Mobile.Droid.Services;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App.Mobile.Pages
+namespace App.Mobile.Droid.Pages
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Login : ContentPage
@@ -42,7 +42,7 @@ namespace App.Mobile.Pages
                         Lblmsg.Text = "Ha ingresado un Usuario o Password icorrecto";
                     else
                     {
-                        await Navigation.PushAsync(new Menu(_user));
+                        await Navigation.PushAsync(new MainMenu(_user));
                     }
 
                 }

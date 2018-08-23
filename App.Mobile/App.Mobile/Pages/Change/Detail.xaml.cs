@@ -19,7 +19,7 @@ namespace App.Mobile.Droid.Pages.Change
         }
         private void OnTapGestureRecognizerTapped(object sender, EventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenu());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenuChangeP());
         }
         public void ButtonBackClick()
         {

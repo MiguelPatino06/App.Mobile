@@ -11,18 +11,17 @@ using Xamarin.Forms.Xaml;
 
 namespace App.Mobile.Droid.Pages.Change
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SubMenu : ContentPage
-    {
-
-        public SubMenu()
-        {
-            InitializeComponent();
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class SubMenuChangeP : ContentPage
+	{
+		public SubMenuChangeP ()
+		{
+			InitializeComponent ();
             BindingContext = new SubMenuViewModelProductChange();
         }
 
         private void Handle_ItemTapped(object sender, ItemTappedEventArgs e)
-            => ((ListView) sender).SelectedItem = null;
+            => ((ListView)sender).SelectedItem = null;
 
         private void OnTapPrevPage(object sender, EventArgs e)
         {
@@ -59,8 +58,14 @@ namespace App.Mobile.Droid.Pages.Change
                 Name = "Ver Solicitud",
                 Page = "Pages/Count/PlanList"
             });
+            Menu.Add(new MenuItemViewModel
+            {
+                Id = 0,
+                Icon = "@drawable/MenuItem.png",
+                Name = "Menu Principal",
+                Page = ""
+            });
 
         }
     }
-
 }

@@ -251,7 +251,7 @@ namespace App.Mobile.Droid.ViewModels
                     {
                         string id = string.Concat("00", result.Id.ToString());
                         id = id.Substring(id.Length - 3);
-                        await Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.Result(id));
+                        await Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.ResultOutput(id));
                     }
                     else
                     {
@@ -276,7 +276,7 @@ namespace App.Mobile.Droid.ViewModels
             resetProduct();
             OutputProductCollection = new ObservableCollection<OutputDetail>();
             WarehouseOriginSelect = string.Empty;
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenu());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenuOutput());
         }
 
         #endregion

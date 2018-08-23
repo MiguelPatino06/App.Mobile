@@ -5,7 +5,6 @@ using System.Text;
 using System.Threading.Tasks;
 using App.Mobile.Droid.Models;
 using App.Mobile.Droid.ViewModels;
-using App.Mobile.Pages;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,7 +23,7 @@ namespace App.Mobile.Droid.Pages.Count
 
         private void OnTapGestureRecognizerTapped(object sender, EventArgs e)
         {
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Menu(_user));
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new MainMenu(_user));
         }
     }
 }
