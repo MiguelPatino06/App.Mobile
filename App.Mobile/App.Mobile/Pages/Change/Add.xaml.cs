@@ -12,10 +12,10 @@ namespace App.Mobile.Droid.Pages.Change
 	[XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Add : ContentPage
     {
-        public Add(string pedido, string cliente, string producto, string NombreProducto, int quantity)
+        public Add(string pedido, string cliente, string producto, string NombreProducto, int quantity, string warehouse)
         {
             InitializeComponent();
-            BindingContext = new OrderReqAddViewModel(pedido, cliente, producto, NombreProducto, quantity);
+            BindingContext = new OrderReqAddViewModel(pedido, cliente, producto, NombreProducto, quantity, warehouse);
         }
     }
 }

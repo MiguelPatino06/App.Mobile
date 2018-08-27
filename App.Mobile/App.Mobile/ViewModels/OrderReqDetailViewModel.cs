@@ -193,7 +193,7 @@ namespace App.Mobile.Droid.ViewModels
 
             if (SelectedItemDetail.ProductCode != null)
             {
-                await Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Add(Pedido, ClientName, SelectedItemDetail.ProductCode, SelectedItemDetail.ProductName, SelectedItemDetail.Quantity));
+                await Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Add(Pedido, ClientName, SelectedItemDetail.ProductCode, SelectedItemDetail.ProductName, SelectedItemDetail.Quantity, SelectedItemDetail.Warehouse));
             }
 
         }

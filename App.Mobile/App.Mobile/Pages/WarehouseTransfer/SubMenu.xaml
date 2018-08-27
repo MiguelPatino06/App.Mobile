@@ -16,7 +16,7 @@
                 <RowDefinition Height="Auto"/>
             </Grid.RowDefinitions>
 
-            <Image WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/Transaction.png" ></Image>
+            <Image WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/warehousetranferItem.png" ></Image>
             <Label Text="     Tranferencia entre Bodegas" Grid.Row="0" FontSize="14"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
 
 

@@ -51,7 +51,7 @@
                         VerticalOptions="Center" HorizontalOptions="Center" ></Label>
 
                 <Button x:Name="btnGuardar" Grid.Row="5" Grid.Column="0" 
-                        Style="{StaticResource ButtonTShirt}" Text="Nro SOL00001" WidthRequest="250"
+                        Style="{StaticResource ButtonTShirt}" Text="Solicitud Enviada a GP" WidthRequest="250"
                         Clicked="BtnGuardar_OnClicked" HorizontalOptions="CenterAndExpand" ></Button>
 
 

@@ -17,5 +17,6 @@ namespace App.Mobile.Droid.Models
         public string ProductName { get; set; }
         public string ProductNameChanged { get; set; }
         public int QuantityChanged { get; set; }
+        public string Warehouse { get; set; }
     }
 }

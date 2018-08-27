@@ -22,7 +22,7 @@ namespace App.Mobile.Droid.ViewModels
 
         private ProductServices productServices;
 
-        public OrderReqAddViewModel(string pedido, string cliente, string producto, string nombreProducto, int qty)
+        public OrderReqAddViewModel(string pedido, string cliente, string producto, string nombreProducto, int qty, string warehouse)
         {
             services = new ProductChangeServices();
             productServices = new ProductServices();
@@ -33,6 +33,7 @@ namespace App.Mobile.Droid.ViewModels
             ProductName = nombreProducto;
             ConcatProducto = producto + " " + nombreProducto;
             Quantity = qty;
+            Warehouse = warehouse;
             //App.Current.MainPage.Navigation.NavigationStack.Last().FindByName<Entry>("EntPedido").Focus();
         }
 
@@ -153,7 +154,17 @@ namespace App.Mobile.Droid.ViewModels
             }
         }
 
+        private string _warehouse;
 
+        public string Warehouse
+        {
+            get { return _warehouse; }
+            set
+            {
+                _warehouse = value;
+                OnPropertyChanged("Warehouse");
+            }
+        }
 
         protected virtual void OnPropertyChanged(string propertyName)
         {
@@ -197,6 +208,7 @@ namespace App.Mobile.Droid.ViewModels
             items.ProductCode = Producto;
             items.ProductCodeChanged = CodeProductSearch;
             items.Quantity = Quantity;
+            items.Warehouse = Warehouse;
 
             if (!string.IsNullOrEmpty(CodeProductSearch))
             {
